@@ -89,7 +89,6 @@ async function fetchImages(query, page) {
     }
 }
 
-
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
 

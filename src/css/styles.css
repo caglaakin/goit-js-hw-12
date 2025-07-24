@@ -1,18 +1,155 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.searchInput {
+    width: 272px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    color: #808080;
+    font-size: 16px;
+}
+
+.searchInput:hover {
+    border-color: #000000;
+}
+
+.searchInput:focus {
+    border-color: #4E75FF;
+    color: #2E2F42;
+}
+
+.searchButton {
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: #4E75FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: all 0.3s ease;
+}
+
+.searchButton:hover {
+    background-color: #6C8CFF;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loader-text {
+    font-size: 20px;
+    color: #2E2F42;
+}
+
+.loader.is-hidden {
+    display: none;
+}
+
+.load-more-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.load-more-btn{
+    width: 150px;
+    height: 40px;
+    background-color: #4E75FF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    letter-spacing: 4%;
+    font-size: 16px;
+    transform: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: #6C8CFF;
+}
+
+.load-more-btn.is-hidden{
+    display: none;
+}
+
+.load-more-loader{
+    margin-bottom: 20px;
+}
+
+.load-more-loader.is-hidden {
+    display: none;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    max-width: 100%;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding-inline-start: 0;
+    list-style-type: none;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    border: 1px solid #808080;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.gallery-image {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+    display: block;
+}
+
+.gallery-link {
+    display: block;
+    text-decoration: none;
+}
+
+.image-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+
+.image-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 4%;
+    line-height: 24px;
+}
+

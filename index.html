@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-12</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital@0;1&display=swap"
+      rel="stylesheet">
+    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-D5Cmjq_w.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-CZ85Xaof.css">
+  </head>
+  <body>
+    
+    <form class="form" id="form">
+      <input type="text" name="searchInput" class="searchInput" placeholder="Search images..." autocomplete="off" />
+      <button class="searchButton" id="searchButton" type="submit">Search</button>
+    </form>
+    
+    
+    <div id="loader" class="loader is-hidden">
+      <span class="loader-text">Loading images, please wait...</span>
+    </div>
+    
+    <ul class="gallery" id="gallery"></ul>
+
+    <div id="load-more-container" class="load-more-container is-hidden">
+      <button type="button" class="load-more-btn is-hidden" id="load-more-btn">Load more</button>
+      <div class="load-more-loader is-hidden">
+        <span class="loader-text">Loading more...</span>
+      </div>
+    </div>
+
+  </body>
+</html>
